@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalon Organics | Wasif Chougule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--------- navbar------ -->
+
+<div class="container">
+    <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="#"><img src="logo.jpg" alt="Logo" class="img-logo"></a>
+        </div>
+
+        <ul class="navbar-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#">Order</a></li>
+        </ul>
+      </nav>
+
+      <!----------- hero-section-------- -->
+
+      <div class="hero-section">
+
+        <div class="col">
+        <img src="hero-img.png" id="heroImage" class="hero-img">
+      </div>
+
+     <div class="vertical-line"></div>
+
+        <div class="col">
+        <div class="content">
+          <h3>A y u r v e d i c</h3>
+            <h1>Avalon Organics</h1>
+            <p>Avalon Organics is a renowed brand specializing in organic personal care products. They prioritize using safe, sustainable ingredients and promote environmental responsibility.</p>
+            <button class="btn">Read more</button>
+          </div>
+        </div>
+ 
+      </div>
+      
+      <div class="small-images ">
+        <img src="image1.png" alt="Small Image 1" class="small-image" onmouseover="changeHeroImage('image1.png')">
+        <img src="image2.png" alt="Small Image 2" class="small-image" onmouseover="changeHeroImage('image2.png')">
+        <img src="image3.png" alt="Small Image 3" class="small-image" onmouseover="changeHeroImage('image3.png')">
+      </div>
+
+</div>
+
+<!----------- products ----------->
+
+<header id="product">
+  <h1 class="top-h1">Top Organics Product </h1>
+</header>
+
+<div class="container">
+ 
+  <div class="product-row">
+    <div class="product">
+      <img src="image1.png" alt="Image 1">
+      <div class="product-content">
+          <h3 class="product-h3">Avalon Organics</h3>
+          <h1 class="product-h1">Aloe Unscented</h1>
+          <button class="product-btn">Buy</button>
+        </div>
+    </div>
+    
+
+    <div class="product">
+      <img src="image2.png" alt="Image 2">
+      <div class="product-content">
+          <h3 class="product-h3">Avalon Organics</h3>
+          <h1 class="product-h1">Scalp Normalising conditioner</h1>
+          <button  class="product-btn">Buy</button>
+        </div>
+    </div>
+
+    <div class="product">
+      <img src="image3.png" alt="Image 3">
+      <div class="product-content">
+          <h3 class="product-h3">Avalon Oragnics</h3>
+          <h1 class="product-h1">Nourishing Lovender</h1>
+          <button  class="product-btn">Buy</button>
+        </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+
+<!-- ----------inquiry section----------- -->
+
+<div class="inquiry-section">
+  <div class="inquiry-form">
+    <h2 class="inquiry-h2">Send us an Inquiry</h2>
+    
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="sub-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+  <div class="info-col">
+    <h3 class="info-h3">About Organic Products</h3>
+    <hr class="last-hr">
+    <p class="info-p">Organic products are made from natural ingredients without the use of synthetic chemicals or pesticides.Avalon Organics is a well-known brand specializing in organic and natural personal care products. They are committed to using pure botanicals, essential oils, and plant-based ingredients in their formulations. Avalon Organics prioritizes certified organic ingredients and avoids harsh chemicals such as parabens, phthalates, synthetic fragrances, artificial colors, and GMOs. Their product range includes skincare, hair care, bath and body products, and more. Avalon Organics is a cruelty-free brand that does not test on animals and offers many vegan-friendly options. They emphasize environmental sustainability through recyclable packaging and responsible sourcing and manufacturing practices.</p>
+    <button class="inq-btn">Read more</button>
+  </div>
+</div>
+
+<!------------- -----footer----------- -->
+
+<footer class="footer">
+  <p class="footer-p">&copy; 2023 Wasif Chougule. All rights reserved.</p>
+</footer>
+
+
+
+  <script>
+
+    function changeHeroImage(imagePath) {
+      var heroImage = document.getElementById('heroImage');
+      heroImage.style.opacity = '0';
+      setTimeout(function () {
+        heroImage.src = imagePath;
+        heroImage.style.opacity = '1';
+      }, 50);
+    }
+
+  </script>
+
+    
+</body>
+</html>
